@@ -1,0 +1,83 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9E7E7;
+}
+
+.navbar {
+    background-color: #CDC8D0;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #CDC8D0;
+    padding: 2rem;
+}
+
+.card {
+    background-color: #F9F3DC;
+}
+
+.card-footer {
+    border: none;
+}
+
+.card-image img, #quizForm img{
+    border-radius: 0px !important;
+}
+
+#quizForm input {
+    display: none;
+}
+
+#quizForm label:hover{
+    cursor: pointer;
+}
+
+#quizForm img {
+    transition: filter 0.25s;
+}
+
+#quizForm label:hover img {
+    filter: brightness(0.75);
+}
+
+.selected {
+    border: 5px solid #3EC487;
+}
+
+.container {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#titleCard img {
+    filter: brightness(0.45) grayscale(0.5);
+    transition: filter 0.2s;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+#titleCard:hover img{
+    filter: brightness(0.55) grayscale(0.5);
+}
+
+#headline {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 0.25rem;
+    white-space: nowrap;
+    color: white;
+}
+
+#titleCard .title {
+    letter-spacing: 0.25rem;
+    white-space: nowrap;
+    color: white;
+}

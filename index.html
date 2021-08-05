@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Site</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!-- bulma  0.9.3-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- googlefonts -->
+
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                  <img src="images/logo.png" alt="quizfunlogo" width="100" height="28">
+                </a>
+              </div>
+        </div>
+      </nav>
+
+    <div class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title has-text-centered">
+                                Where should you vacation based on your daily meals?
+                            </p>
+                        </header>
+
+                        <div id="titleCard">
+                            <div class="card-image">
+                                <div class="container">
+                                    <a role="button" id="startBtn">
+                                        <figure class="image is-square">
+                                            <img src="images/header.jpeg"
+                                                alt="headerimg">
+                                        </figure>
+                                        <div class="text-overlay has-text-centered">
+                                            <div class="title is-1" id="headline">
+                                                <p>Find your</p>
+                                                <p>adventure</p>
+                                            </div>
+                                            <p class="title is-5">Click to begin</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <p class="subtitle has-text-centered">
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="quizCard" class="is-hidden">
+                            <div class="card-image">
+                                <div class="container" id="quizDisplay">
+                                    <form id="quizForm">
+                                        <div class="columns is-mobile is-gapless mb-0">
+                                            <div class="column">
+                                                <input type="radio" name="" id="one" value="1">
+                                                <label for="one">
+                                                    <figure class="image is-square">
+                                                        <img src="" alt="answer1">
+                                                    </figure>
+                                                </label>
+                                            </div>
+                                            <div class="column">
+                                                <input type="radio" name="" id="two" value="2">
+                                                <label for="two">
+                                                    <figure class="image is-square">
+                                                        <img src="" alt="answer2">
+                                                    </figure>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="columns is-mobile is-gapless">
+                                            <div class="column">
+                                                <input type="radio" name="" id="three" value="3">
+                                                <label for="three">
+                                                    <figure class="image is-square">
+                                                        <img src="" alt="answer3">
+                                                    </figure>
+                                                </label>
+                                            </div>
+                                            <div class="column">
+                                                <input type="radio" name="" id="four" value="4">
+                                                <label for="four">
+                                                    <figure class="image is-square">
+                                                        <img src="" alt="answer4">
+                                                    </figure>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+
+                            </div>
+                            <div class="card-content">
+                                <p class="subtitle" id="questionDisplay">
+                                </p>
+                                <p id="counterHeader"></p>
+                                <progress class="progress" value="0" max="100"></progress>
+                            </div>
+                        </div>
+
+                        <div id="resultCard" class="is-hidden">
+                            <div class="card-image">
+                                <div class="container">
+                                    <figure class="image is-4by3">
+                                        <img id="resultImg" src="" alt="...">
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <p class="subtitle">
+                                    Your vacation destination is <span id="resultName"><strong></strong></span>!
+                                </p>
+                                <p class="subtitle6" id="resultDescription">
+                                </p>
+                            </div>
+
+                            <footer class="card-footer">
+                                <a href="index.html" class="card-footer-item button is-primary">Take Quiz Again</a>
+                            </footer>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="">
+        <div class="content has-text-centered">
+          <p>
+            Created by <a href="https://jgthms.com">Nathan Hoang</a> - 2021. Images are under free to use license from <a href="https://unsplash.com/">unsplash.com</a>
+          </p>
+        </div>
+      </footer>
+
+        <script src="bulma.js"></script>
+        <script src="app.js"></script>
+
+</body>
+
+</html>
